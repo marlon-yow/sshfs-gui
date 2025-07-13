@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SSHFS GUI</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234CAF50'><path d='M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z'/></svg>">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-icons/material-icons.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="main-column">
+      <h2><span class="material-icons">storage</span> Conexões SSHFS</h2>
+      <div id="connections-list" class="connections-list">
+        <!-- As conexões salvas serão listadas aqui -->
+        <div class="empty-list">Nenhuma conexão encontrada</div>
+      </div>
+      <button id="add-connection-btn" class="btn btn-small"><span class="material-icons">add</span> Nova Conexão</button>
+    </div>
+  </div>
+
+  <!-- Modal de Feedback -->
+  <div id="feedback-modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-message">Conectando...</span>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='renderer.js') }}"></script>
+</body>
+</html>

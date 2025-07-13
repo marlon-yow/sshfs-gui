@@ -1,0 +1,262 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.main-column {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3c3c3c;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn-secondary {
+  background-color: #757575;
+}
+
+.btn-secondary:hover {
+  background-color: #616161;
+}
+
+.material-icons {
+  font-size: 20px;
+}
+
+
+
+/* Estilos para a janela de conexão */
+.connection-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #171717;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Estilos para a tabela de detalhes do host */
+.host-details {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.host-details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.host-details-table td {
+  padding: 6px;
+  border-bottom: 1px solid #444;
+}
+
+.host-details-table tr:last-child td {
+  border-bottom: none;
+}
+
+.host-details-table td:first-child {
+  font-weight: bold;
+  width: 30%;
+  color: #4CAF50;
+}
+
+/* Estilos para a lista de conexões */
+.connections-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.connection-item {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #3e3e3e;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.connection-item:hover {
+  background-color: #4a4a4a;
+}
+
+.connection-item.active {
+  background-color: #4CAF50;
+}
+
+.connection-title {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.status-icon {
+  font-size: 18px;
+}
+
+.connection-details {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.empty-list {
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+.connection-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.connection-buttons-left {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-round {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-connect {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-connect:hover {
+  background-color: #2ecc71;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.btn-folder {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-folder:hover {
+  background-color: #e67e22;
+}
+
+.btn-round .material-icons {
+  font-size: 18px;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #3c3c3c;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
