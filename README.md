@@ -6,6 +6,13 @@ A web-based graphical interface for managing SSHFS connections on Linux systems.
 
 This project provides a simple web interface to manage SSHFS (SSH Filesystem) connections. It allows you to create, save, and manage remote filesystem mounts through an intuitive web interface.
 
+## About 2
+
+Vibecoded this project, with AWS Amazon Q - Calude Sonet 4
+First atempt was in python with Tkinter, then changed to Electro,
+then changed back to python with web-based interface. Yep, AI did, I just asked.
+
+
 **Based on:** [sshfs-win-manager](https://github.com/evsar3/sshfs-win-manager) - Originally an Electron-based Windows GUI, converted to a Flask web application for Linux.
 
 **SSHFS Reference:** [libfuse/sshfs](https://github.com/libfuse/sshfs)
